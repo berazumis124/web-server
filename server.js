@@ -6,4 +6,6 @@ app.get ('/yeah', function (req, res){
     res.send('Yeah!!! It\'s running!');
 });
 
+app.use(express.static(__dirname + '/public'));
+
 app.listen(PORT);
